@@ -1,24 +1,49 @@
+html {
+  cursor: url("../img/cursor/slime_default.png"), auto;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     /* overflow: hidden; */
     /* background-color: #333; */
-  }
+}
   
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: #606060;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    color: #cd73f1;
-  }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #606060;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: #cd73f1;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* width: 200px; */
+  overflow: hidden;
+  font-size: 1.5em;
+  color: #606060;
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.container span{
+  color: #b337e4;
+} 
