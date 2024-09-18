@@ -7,80 +7,146 @@
     <title>Silver's Portfolio</title>
     
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel = "icon" href = "img/cursor/slime_default.png" type = "image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!-- <div class = "header">
-        <div class = "Logo"></div>
-
-        <div class = "navbar">
-            <ul>
-                <li><a href = "index.html">HOME</a></li>
-                <li><a href = "#">INTERACTION DESIGN</a></li>
-                <li><a href = "#">DIGITAL ARTS & ANIMATION</a></li>
-                <li><a href = "#">ABOUT</a></li>
-                <li><a href = "#">CONTACT</a></li>
-            </ul>
-        </div>
-    </div> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Silver</a>
-            
+            <a class="navbar-brand" href="">Silver</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">INTERACTION DESIGN</a>
+                        <a class="nav-link" href="#project">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DIGITAL ARTS & ANIMATION</a>
+                        <a class="nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class = "main">
 
-        <div class = "container">
-            <h1 class = "text first-text">Hi, I'm Silver Lui</h1>
-            <span class="text job_title"></span>
+    <div class = "main">
+        <div class = "intro-part">
+            <div class ="cover-container" alt = "background">
+                <!-- <img src = "img/silver/pic.png" class = "cover-img" alt = "background"> -->
+                <div id ="overlay" class = "cover-bg-overlay">
+                    <div class = "container">
+                        <h1 class = "text first-text">Hi, I'm Silver Lui</h1>
+                        <span class="text job_title"></span>
+                    </div> 
+                </div>
+            
+            
+            </div>
+                      
+            <!--Type Anim-->
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('.job_title', {
+                    strings: ["XR Developer", "Game Developer","Front-end Developer", "Cat Addict"],
+                    typeSpeed: 50,
+                    backSpeed: 50,
+                    loop: true
+                });
+            </script>
+            
         </div>
 
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed('.job_title', {
-                strings: ["XR Developer", "Game Developer","Front-end Developer"],
-                typeSpeed: 50,
-                backSpeed: 50,
-                loop: true
-            });
-        </script>
+        <section id="project" class = "preview-projects">
+            <div class= "containter">
+                <h1 class = "col-sm-12" id = "project">Projects</h1>
+                <div class = "row">
+                    <div class = "col-sm-4">
+                        <div class = "project-card">
+                            <img src = "img/silver/silver_pic01.jpg" class = "img-fluid b-shadow-a" alt = "project image">
+                            <div class = "project-content">
+                                <h3>Project 1</h3>
+                                <p>Project Description</p>
+                                <button type ="button" class = "btn"> <a href = "#">Read More</a></button>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- <div class = "preview-projects">
-            
+                    <div class = "col-sm-4">
+                        <div class = "project-card">
+                            <img src = "img/silver/silver_pic02.jpg" class = "img-fluid b-shadow-a" alt = "project image">
+                            <div class = "project-content">
+                                <h3>Project 2</h3>
+                                <p>Project Description</p>
+                                <button type ="button" class = "btn">  <a href = "#">Read More</a></button>
+                            </div>
+                        </div>
+                    </div>
 
-        </div> -->
+                    <div class = "col-sm-4">
+                        <div class = "project-card">
+                            <img src = "img/silver/silver_pic02.jpg" class = "img-fluid b-shadow-a" alt = "project image">
+                            <div class = "project-content">
+                                <h3>Project 3</h3>
+                                <p>Project Description</p>
+                                <button type ="button" class = "btn"> <a href = "#">Read More</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id = "about" class = "about-me">
+            <h1 class = "heading">About Me</h1>
+            <div class = "about-content container-fluid">
+                <div class = "row">
+                    <div id = "about_text" class = "col-6" style="padding: 0;">
+                        <p class = "text">I am a student studying in the field of Digital Arts and Animation. I am passionate about creating interactive and immersive experiences for users. I am also a cat lover and I have 3 cats at home. I am currently looking for internship opportunities in the field of XR development and game development.</p>
+                        <button type ="button" class = "btn"> <a href = "#">Read More</a></button>
+                    </div>
+
+                    <div id = "profile_block" class="col-6">
+                        <img src = "img/silver/silver_pic03.jpg" id = "profile_img" class = "img-fluid b-shadow-a" alt = "profile image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div><!--End of Main-->
+</body>
+
+<!--Footer -->
+<footer> 
+    <div id = "contact" class = "contact-me">
+        <div class = "col-12">
+            <p class = "contact-text"><strong><a href="mailto:silverlui1104@gmail.com">silverlui1104@gmail.com</a></strong></p>
+        </div>
 
     </div>
-      
-</body>
+    <div class = "container-develop">
+        <p>Developed with passion by Silver Lui © 2024</p>
+    </div>
+
+
+</footer>
+
 </html>

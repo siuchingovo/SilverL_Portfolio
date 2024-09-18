@@ -2,16 +2,15 @@ html {
   cursor: url("../img/cursor/slime_default.png"), auto;
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
-    /* background-color: #333; */
 }
   
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -20,11 +19,12 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: "Poor Story", Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  color: #cd73f1;
+/* Change the link color on hover */
+.nav-item a:hover {
+  color: #b8c1ec;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-  /* width: 200px; */
+  /* position: fixed; */
   overflow: hidden;
   font-size: 1.5em;
   color: #606060;
@@ -44,6 +44,113 @@ body {
   margin-top: 10%;
   margin-left: 10%;
 }
-.container span{
-  color: #b337e4;
+.text.first-text {
+  color: #ffffff;
+}
+.container span.job_title{
+  color:  #ffffff;
+  font-weight: bold;
 } 
+
+
+.cover-container {
+  position: relative;
+  background-image: url("../img/silver/pic.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.cover-bg-overlay {
+  position: inherit; 
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: block;
+}
+
+.intro-part {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 2rem auto;
+  padding: 20px;
+  width: 100%;
+  /* background-color: #f1f1f1; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+#profile_img {
+  border-radius: 5%;
+  width: 512px;
+  height: auto;
+}
+
+#profile_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button.btn {
+  background-color: #EEBBC3;
+  padding: 10px;
+  /* margin: 8px 0; */
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Contact */
+.contact-me {
+  /* background-color: #232946; */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  top: 10;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #232946;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  top: 10;
+  width: 100%;
+}
+
+.contact-text {
+  color: #ffffff;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+.contact-text a:hover {
+  color: #bbc1ec;
+}
+
+.contact-text a {
+  color: #ffffff;
+  text-decoration: none;
+}
