@@ -2,7 +2,6 @@ html {
   cursor: url("../img/cursor/slime_default.png"), auto;
 }
 
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -21,6 +20,7 @@ li a {
   text-decoration: none;
   font-family: "Poor Story", Georgia, 'Times New Roman', Times, serif;
 }
+
 
 /* Change the link color on hover */
 .nav-item a:hover {
