@@ -19,7 +19,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="blue">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="blue">
         <div class="container-fluid">
             <a class="navbar-brand" href="">Silver</a>
             
@@ -84,15 +84,63 @@
                     <div class = "col-sm-4">
                         <div class = "project-card">
                             <div class = "container-project">
-                                <a href ="https://dl.acm.org/doi/10.1145/3532834.3536205">
-                                    <img src = "img/projects/JoJ/JoJ_Cover.png" class = "img-fluid b-shadow-a" alt = "project image">
-                                    <div class = "project-pic-overlay">
-                                        <div class = "project-content">
-                                            <h3 class = "project-text">Journal of My Journey</h3>
-                                            <p class = "project-text">XR, Seamless Interaciton</p>
-                                        </div>
+                                <img src = "img/projects/JoJ/JoJ_Cover.png" class = "img-fluid b-shadow-a" alt = "project image">
+                                <div class = "project-pic-overlay" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <div class = "project-content">
+                                        <h3 class = "project-text">Journal of My Journey</h3>
+                                        <p class = "project-text">XR, Seamless Interaciton</p>
                                     </div>
-                                </a>
+                                </div>
+ 
+
+                                <!--Modal-->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-xl">
+                                      <div class="modal-content">
+                                        <!-- <div class="modal-header">
+
+                                        </div> -->
+                                        <div class = "modal-header-silver">
+                                            <h4 class="modal-title" id="staticBackdropLabel">Journal of My Journey</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                            <div class="modal-body">
+                                                <div class ="project-tag-container">
+                                                    <span class = "project-tag-text">#Virtual Reailty</span>
+                                                    <span class = "project-tag-text">#Seamless Interaction</span>
+                                                    <span class = "project-tag-text">#Digital Fabrication</span>
+                                                
+                                                </div>
+                                                <img src = "img/projects/JoJ/JoJ_Cover.png" class = "img-fluid b-shadow-a" alt = "project image">
+
+                                                <h5 class="project-pop-title"><stong>About</stong></h5>
+                                                <div class = "project-pop-text-container">
+                                                    <p class = "project-pop-text">A long lost story ready to be uncovered from a journal. Is this a reality or fantasy? Let's cross between virtuality and reality, enjoy a whole new experience that integrates sensory feedback such as touch, smell, visual and sound, and affect reality through your immersive experience in the virtual world.</p>  
+                                                </div>
+                                                <div class = "project-video">
+                                                    <iframe width="100%" height="528" src="https://www.youtube.com/embed/XBXWrrSw7Zc?si=V1c-vpOVMI0HOg68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                </div>
+                                                
+
+                                                <h5 class = "project-pop-title">Team</h5>
+                                                <ul>
+                                                    <li class = "project-pop-text">Director | Ping-Hsuan Han</li>
+                                                    <li class = "project-pop-text">Unity Development | Ching Lui, Miguel-Ying-Jie Then, Yu-Chih Chou</li>
+                                                    <li class = "project-pop-text">Style Guide, UI & UX Design | Yvone Tsai Chen</li>
+                                                    <li class = "project-pop-text">3D Modeling | Jin-Yin Lim</li>
+                                                </ul>
+
+                                            </div>
+
+            
+                                        <!-- <div class="modal-footer">
+                                          <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                                          <button type="button" class="btn">Understood</button>
+                                        </div> -->
+                                      </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <button type ="button" class = "btn"> <a href = "#">Read More</a></button>
                         </div>
@@ -115,6 +163,7 @@
                         </div>
                     </div>
 
+                    <!--Project 3-->
                     <div class = "col-sm-4">
                         <div class = "project-card">
                             <div class = "container-project">
@@ -141,11 +190,11 @@
                     <div id = "about_text" class = "col-6" style="padding: 0;">
                         <p class = "text">Dynamic game developer with extensive experience in both team-oriented and independent environments. Proven ability to deliver project concepts using a diverse range of technological resources. Relocating to Canada in October 2024 with a 5-year Open Work Permit, seeking to contribute to a forward-thinking company and collaborative team.
                         </p>
-                        <button type ="button" class = "btn"> <a href = "https://drive.google.com/file/d/1ktmkSbjwgSzHLr7lq_x5jK7saTdTShFi/view?usp=sharing">My Resume</a></button>
+                        <button type ="button" class = "btn"> <a href = "https://drive.google.com/file/d/1ktmkSbjwgSzHLr7lq_x5jK7saTdTShFi/view?usp=sharing">Resume</a></button>
                     </div>
 
                     <div id = "profile_block" class="col-6">
-                        <img src = "img/silver/silver_pic03.jpg" id = "profile_img" class = "img-fluid b-shadow-a" alt = "profile image">
+                        <img src = "img/silver/silver_pic03.jpg" id = "profile_img" class = "img-fluid b-shadow-a profile-pic" alt = "profile image">
                     </div>
                 </div>
             </div>
