@@ -1,6 +1,9 @@
 html {
   /* cursor: url("../img/cursor/slime_default.png"), auto; */
 }
+.main {
+  background-color: #232946;
+}
 
 ul {
     list-style-type: none;
@@ -9,17 +12,55 @@ ul {
 }
 
 li a {
-  display: block;
+  display: flex;
   color: #606060;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   /* font-family: "Poor Story", Georgia, 'Times New Roman', Times, serif; */
 }
 
+/* Navigation bar */
+nav.navbar {
+  /* overflow: hidden; */
+  background-color: #232946;
+  padding: 0px;
+  position: fixed;
+  /* top: 0;
+  width: 100%;
+  z-index: 1000; */
+}
+
+.container-fluid{
+  background-color: #232946;
+  padding: 12px;
+}
+
+a.navbar-brand{
+  color:#fffffe;
+  padding:0px;
+}
+.collapse.navbar-collapse{
+  margin-right: 0%;
+  justify-content: flex-end;
+  
+}
+
+ul.navbar-nav {
+  margin-right: 0% !important;
+}
+
+.nav-item a{
+  color: #fffffe;
+  padding: 12px;
+}
 /* Change the link color on hover */
 .nav-item a:hover {
   color: #b8c1ec;
+}
+
+.navbar-toggler {
+  background-color: #EEBBC3 !important;
 }
 
 body {
@@ -79,20 +120,31 @@ body {
 }
 
 section {
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   padding: 20px;
   width: 100%;
   /* background-color: #f1f1f1; */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 /* Projects */
+.projects-container {
+  padding: 12px 0px;
+}
+
 .container-project {
   position: relative;
   margin-bottom: 1rem;
 }
 
+#project-heading {
+  color: #fffffe;
+}
+
+.about-text {
+  color: #bbc1ec;
+}
 .img-fluid.b-shadow-a {
   border-radius: 10px;
   display: block;
@@ -145,9 +197,10 @@ section {
   flex-wrap: wrap;
 }
 .project-tag-text {
-  background-color: #EEBBC3;
-  color: #232946;
+  /* background-color: #EEBBC3; */
+  color: #EEBBC3;
   font-size: 0.8rem;
+  font-style: italic;
 
   padding: 0.5rem;
   border-radius: 5px;
@@ -169,7 +222,9 @@ section {
 .project-pop-text {
   font-size: 1.1rem;
   color: #b8c1ec;
-  /* font-family: "poor story"; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .modal-header-silver{
@@ -188,7 +243,18 @@ section {
   background-color: #232946;
 }
 
+.project-url {
+  margin-left: 0.5rem;
+}
 
+.icon-link-silver {
+  background-image: url('../img/icon/link-external-svgrepo-com.svg');
+  background-size: cover;
+  
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
 
 /* About */
 .about-content{
@@ -212,18 +278,51 @@ section {
 
 button.btn {
   background-color: #EEBBC3;
-  padding: 10px;
+  padding: 0px;
   margin: 8px 0;
   cursor: pointer;
   border-radius: 10px;
 }
 
-/* button.btn:hover {
+button.btn:hover {
   background-color: #EEBBC3;
-} */
+}
 
 button.btn a {
   color: #232946;
+}
+
+button .icon-resume-btn a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+}
+
+
+i.icon-resume-silver {
+  background-image: url("../img/icon/resume-portfolio-svgrepo-com.svg");
+  background-size: cover;
+  align-items: center;
+  
+  padding: 20px 20px;;
+}
+
+.custom-button:hover {
+  background-color: #d9a3b0;
+}
+
+.custom-button .custom-icon {
+  background-image: url("../img/icon/custom-icon.svg");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.custom-button .custom-text {
+  font-weight: bold;
 }
 
 

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Silver's Portfolio</title>
-    
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel = "icon" href = "img/cursor/slime_default.png" type = "image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -31,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#project">PROJECTS</a>
@@ -79,7 +78,7 @@
             <div class= "containter">
                 <h1 class = "col-sm-12" id = "project-heading">Projects</h1>
 
-                <div class = "row">
+                <div class = "row projects-container">
                     <!--Project 1-->
                     <div class = "col-sm-4">
                         <div class = "project-card">
@@ -95,7 +94,7 @@
 
                                 <!--Modal-->
                                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-xl">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg">
                                       <div class="modal-content">
                                         <!-- <div class="modal-header">
 
@@ -111,16 +110,72 @@
                                                     <span class = "project-tag-text">#Digital Fabrication</span>
                                                 
                                                 </div>
-                                                <img src = "img/projects/JoJ/JoJ_Cover.png" class = "img-fluid b-shadow-a" alt = "project image">
+                                                
+                                                <div class = "project-video">
+                                                    <iframe width="100%" height="528" src="https://www.youtube.com/embed/XBXWrrSw7Zc?si=V1c-vpOVMI0HOg68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                </div>
+                                                <!-- <img src = "img/projects/JoJ/JoJ_Cover.png" class = "img-fluid b-shadow-a" alt = "project image"> -->
 
                                                 <h5 class="project-pop-title"><stong>About</stong></h5>
                                                 <div class = "project-pop-text-container">
                                                     <p class = "project-pop-text">A long lost story ready to be uncovered from a journal. Is this a reality or fantasy? Let's cross between virtuality and reality, enjoy a whole new experience that integrates sensory feedback such as touch, smell, visual and sound, and affect reality through your immersive experience in the virtual world.</p>  
                                                 </div>
-                                                <div class = "project-video">
+                                                <!-- <div class = "project-video">
                                                     <iframe width="100%" height="528" src="https://www.youtube.com/embed/XBXWrrSw7Zc?si=V1c-vpOVMI0HOg68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                                </div>
+                                                </div> -->
                                                 
+                                                <div id="carouselExampleIndicators" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="img/projects/JoJ/JoJ_Cover.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="img/projects/JoJ/JoJ_Pic01.jpg" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="img/projects/JoJ/JoJ_Pic02.jpg" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="img/projects/JoJ/JoJ_Pic03.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="img/projects/JoJ/JoJ_Pic04.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="img/projects/JoJ/JoJ_Pic05.jpg" class="d-block w-100" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+
+                                                <h5 class = "project-pop-title">Publication</h5>
+                                                <ul>
+                                                    <li class = "project-pop-text">Top Selection Award | ACM SIGGRAPH 2022
+                                                        <a href ="https://dl.acm.org/doi/10.1145/3532834.3536205#sec-comments" class ="project-url">
+                                                            <i class="icon-link-silver"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class = "project-pop-text">The Honarable Mention Award | CGW XR Battle 2022
+                                                        <a href = "https://sites.google.com/gapps.ntnu.edu.tw/cgw2022/xr-battle" class ="project-url">
+                                                            <i class="icon-link-silver"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
 
                                                 <h5 class = "project-pop-title">Team</h5>
                                                 <ul>
@@ -142,7 +197,7 @@
                                 </div>
 
                             </div>
-                            <button type ="button" class = "btn"> <a href = "#">Read More</a></button>
+                            <!-- <button type ="button" class = "btn"> <a href = "#">Read More</a></button> -->
                         </div>
                     </div>
 
@@ -159,7 +214,7 @@
                                 </div>
                             </div>
 
-                            <button type ="button" class = "btn">  <a href = "#">Read More</a></button>
+                            <!-- <button type ="button" class = "btn">  <a href = "#">Read More</a></button> -->
                         </div>
                     </div>
 
@@ -176,7 +231,7 @@
                                 </div>
                             </div>
                             
-                            <button type ="button" class = "btn"> <a href = "#">Read More</a></button>
+                            <!-- <button type ="button" class = "btn"> <a href = "#">Read More</a></button> -->
                         </div>
                     </div>
                 </div>
@@ -184,13 +239,22 @@
         </section>
  
         <section id = "about" class = "about-me">
-            <h1 class = "heading">About Me</h1>
+            <h1 class = "heading" id = "project-heading">About Me</h1>
             <div class = "about-content container-fluid">
                 <div class = "row">
-                    <div id = "about_text" class = "col-6" style="padding: 0;">
-                        <p class = "text">Dynamic game developer with extensive experience in both team-oriented and independent environments. Proven ability to deliver project concepts using a diverse range of technological resources. Relocating to Canada in October 2024 with a 5-year Open Work Permit, seeking to contribute to a forward-thinking company and collaborative team.
+                    <div id = "about_text_container" class = "col-6" style="padding: 0;">
+                        <p class = "about-text">Dynamic game developer with extensive experience in both team-oriented and independent environments. Proven ability to deliver project concepts using a diverse range of technological resources.</p>
+                        <p class = "about-text">Relocating to Canada in October 2024 with a Open Work Permit, seeking to contribute to a forward-thinking company and collaborative team.
                         </p>
-                        <button type ="button" class = "btn"> <a href = "https://drive.google.com/file/d/1ktmkSbjwgSzHLr7lq_x5jK7saTdTShFi/view?usp=sharing">Resume</a></button>
+                        <button type ="button" class = "btn">
+                            <div class = "icon-resume-btn">
+                                <a href = "https://drive.google.com/file/d/1ktmkSbjwgSzHLr7lq_x5jK7saTdTShFi/view?usp=sharing">
+                                    <i class="icon-resume-silver"></i>
+                                    <!-- <img src = "img/icon/resume-portfolio-svgrepo-com.svg" alt = "resume icon"> -->
+                                    Resume
+                                </a>
+                            </div>
+                        </button>
                     </div>
 
                     <div id = "profile_block" class="col-6">
