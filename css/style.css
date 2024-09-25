@@ -1,6 +1,11 @@
 html {
   /* cursor: url("../img/cursor/slime_default.png"), auto; */
 }
+body {
+  background-color: #f0f0f0;
+  top: 0;
+  left: 0;
+}
 .main {
   background-color: #232946;
 }
@@ -19,6 +24,10 @@ li a {
   text-decoration: none;
   /* font-family: "Poor Story", Georgia, 'Times New Roman', Times, serif; */
 }
+
+/* Loader */
+
+
 
 /* Navigation bar */
 nav.navbar {
@@ -39,6 +48,7 @@ nav.navbar {
 a.navbar-brand{
   color:#fffffe;
   padding:0px;
+  font-size: 2rem;
 }
 .collapse.navbar-collapse{
   margin-right: 0%;
@@ -174,6 +184,7 @@ section {
   font-size: 1em;
 }
 
+
 .project-pic-overlay:hover {
   opacity: 0.8;
 }
@@ -225,6 +236,10 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.project-pop-text a{
+  color: #b8c1ec;
 }
 
 .modal-header-silver{
@@ -339,7 +354,7 @@ i.icon-resume-silver {
 
 
 /* Footer */
-footer {
+.footer-silver {
   background-color: #232946;
   color: white;
   text-align: center;
@@ -362,7 +377,6 @@ footer {
 .contact-text a:hover {
   color: #bbc1ec;
 }
-
 
 .container-develop {
   display: flex;
