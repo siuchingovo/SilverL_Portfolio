@@ -140,6 +140,8 @@ section {
   /* background-color: #f1f1f1; */
   border-radius: 10px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Projects */
@@ -392,8 +394,14 @@ i.icon-resume-silver {
   padding: 0 22px;
 }
 
-.contact-icon-linkedin{
+.contact-icon{
   width: 24px;
   height: auto;
-  
+  margin-left: 1rem;
+}
+
+.external-link {
+  display: flex;
+  justify-content:space-between;  
+
 }
