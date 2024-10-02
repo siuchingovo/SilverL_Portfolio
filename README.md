@@ -1,6 +1,6 @@
 # My Personal Website
 
-![Project URL](https://siuchingovo.github.io/SilverL_Portfolio/)
+https://roadmap.sh/projects/portfolio-website
 
 **Welcome to Silver personal website repository! **
 The website showcases my skills, experiences, and interests. It's a space where I share my thoughts, projects, and anything else that inspires me.
